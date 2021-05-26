@@ -9,16 +9,20 @@
     <header>
       <nav class="main-navigation">
         <ul>
-          <li><a href="blank.html">Информацияa></a></li>
-          <li><a href="blank.html"></a>Фото и видео</li>
-          <li><a href="#map"></a>Карта штата</li>
-          <li><a href="catalog.html"></a>Гостиницы</li>
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="#map">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
-        <a><img src="https://via.placeholder.com/136x70" width="136" height="70" alt="logo"></a>
+        <a><img src="https://via.placeholder.com/138x70" width="138" height="70" alt="logo"></a>
       </nav>
     </header>
     <main>
       <section class="intro">
+        <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="background-mountain">
+        <img src="https://via.placeholder.com/188x45" width="188" height="45" alt="welcome">
+        <img src="https://via.placeholder.com/256x29" width="256" height="29" alt="to the gorgeous">
+        <img src="https://via.placeholder.com/457x214" width="457" height="214" alt="Sedona Because the grand canyon sucks">
         <h1>Welcome to Sedona</h1>
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -30,7 +34,21 @@
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Restaurant">
-            </li>
+            <ul class="advise">
+              <li>
+                <h2>Жильё</h2>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li>
+                <h2>Еда</h2>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li>
+                <h2>Сувениры</h2>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>  
+          </li>
             <li>
               <img src="https://via.placeholder.com/800x256" width="800" height="256" alt="Devils Bridge">
               <h2>Там есть Мост дьявола</h2>
@@ -53,30 +71,26 @@
               <p>большинство едет в гранд каньон и толпится там</p>
             </li>
         </ul>
-        <div class="advise">
-          <ul>
-            <li>
-              <h2>Жильё</h2>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li>
-              <h2>Еда</h2>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li>
-              <h2>Сувениры</h2>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-        </div>
       </section>
-      <form method="GET">
-        <label>
+      <section>
+        <h2>Осталось проверить даты</h2>
           <span>Заинтересовались?</span>
           <br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-          <input type="button" name="search" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">
-        </label>
-      </form>
+      </section>
+          <button>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <form method="POST">
+            <label for="arrival-date">
+              Дата заезда: <input type="date" name="arrival-date" id="arrival-date">
+            </label><br>
+            <label for="departure-date">
+              Дата выезда: <input type="date" name="departure-date" id="departure-date">
+            </label><br>
+            <label for="adults-num">Взрослые: </label>
+              <button class="quantity-arrow-minus"> - </button><input type="number" name="adults-num" id="adults-num" value="2"><button class="quantity-arrow-plus"> + </button>
+          <label for="kids-num">Дети: </label>
+            <button class="quantity-arrow-minus"> - </button><input type="number" name="kids-num" id="kids-num" value="0"><button class="quantity-arrow-plus"> + </button><br>
+            <button type="submit">Найти</button>
+          </form>
       <div id="map"></div>
     </main>
     <footer>
@@ -99,9 +113,10 @@
         </ul>
       </section>
       <section>
+        <h2>Кого благодприть за этот зпмечательно созданный сайт</h2>
         <p>Website by</p>
         <a href="https://htmlacademy.ru">
-          <img src="https://via.placeholder.com/115x33" width="115" height="33" alt="logo htmlacademy">
+          <img src="https://via.placeholder.com/115x34" width="115" height="34" alt="logo htmlacademy">
         </a>
       </section>
     </footer>
