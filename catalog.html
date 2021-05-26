@@ -18,10 +18,102 @@
       </nav>
     </header>
     <main>
-        <form>
+        <section>
+            <h2>Критерии поиска</h2>
+            <form method="GET">
+                <p>Инфраструктура:</p>
+                <ul>
+                    <li>
+                        <label for="pool">Бассейн</label>
+                        <input type="checkbox" name="pool" id="pool" checked>
+                    </li>
+                    <li>
+                        <label for="parking">Парковка</label>
+                        <input type="checkbox" name="parking" id="parking">
+                    </li>
+                    <li>
+                        <label for="wi-fi">Wi-Fi</label>
+                        <input type="checkbox" name="wi-fi" id="wi-fi">
+                    </li>
+                </ul>
+                <p>Тип жилья:</p>
+                <ul>
+                    <li>
+                        <label for="hotel">Гостиница</label>
+                        <input type="checkbox" name="hotel" id="hotel" checked>
+                    </li>
+                    <li>
+                        <label for="motel">Мотель</label>
+                        <input type="checkbox" name="motel" id="motel" checked>
+                    </li>
+                    <li>
+                        <label for="apartments">Апартаменты</label>
+                        <input type="checkbox" name="apartments" id="apartments" checked>
+                    </li>
+                </ul>
+                <p>Стоимость в сутки, ₽:</p>
+                <div></div>
+                <input type="range" min="0" max="3000" step="100">
+                <br><button type="submit">Показать</button>
+            </form>
+        </section>
+        <section>
+          <p>Найдено: 3</p>
+          <form>
+            <h3>Сортировка:</h3>
+            <ul>
+              <li>
+            <input type="checkbox" name="price" id="price" checked>
+            <label for="price">По цене</label>
+              </li>
+              <li>
+                <input type="checkbox" name="type" id="type">
+                <label for="type">По типу</label>
+              </li>
+              <li>
+                <input type="checkbox" name="rating" id="rating">
+                <label for="rating">По рейтингу</label>
+              </li>
+            </ul>
+          </form>
 
-        </form>
-        
+        </section>
+        <section>
+          <h2>Результаты поиска</h2>
+          <div>
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Amara resort and SPA hotel">
+            <h2>Amara Resort & Spa</h2>
+            <ul>
+              <li>Гостиница</li>
+              <li>От 4000 ₽</li>
+              <li><button>Подробнее</button></li>
+              <li><button>Забронировать</button></li>
+              <li>Рейтинг: 8,5</li>
+            </ul>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Desert Quail Inn motel">
+            <h2>Desert Quail Inn</h2>
+            <ul>
+              <li>Мотель</li>
+              <li>От 3000 ₽</li>
+              <li><button>Подробнее</button></li>
+              <li><button>Забронировать</button></li>
+              <li>Рейтинг: 8,9</li>
+            </ul>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/135x90" width="135" height="90" alt="Villas at Poco Diablo apartments">
+            <h2>Villas at Poco Diablo</h2>
+            <ul>
+              <li>Апартаменты</li>
+              <li>От 2000 ₽</li>
+              <li><button>Подробнее</button></li>
+              <li><button>Забронировать</button></li>
+              <li>Рейтинг: 9,2</li>
+            </ul>
+          </div>
+        </section>
     </main>
     <footer>
         <section>
