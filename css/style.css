@@ -39,7 +39,7 @@
 
 /*global*/
 
-body {
+.page-body {
   min-width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -50,12 +50,23 @@ body {
   color: var(--basic-black);
   text-align: center;
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* GRID*/
+
+.page {
+  height: 100%;
 }
 
 /*отключение дефолтных иконок*/
@@ -79,6 +90,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 /*navigation*/
 
 .main-nav {
+  display: grid;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
