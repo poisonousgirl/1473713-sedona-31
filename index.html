@@ -13,131 +13,136 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
-    <header class="main-header">
-      <nav class="main-nav">
-        <ul class="site-nav">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="#map">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="138" height="70" alt="logo">
-        </a>
-      </nav>
-    </header>
-    <main class="main-page">
-      <section class="intro">
-        <h1 class="visually-hidden">Welcome to Sedona</h1>
-        <img src="img/welcome-to-sedona.svg" width="457" height="351" alt="Welcome to Sedona. Because the grand canyon sucks">
-    </section>
+    <div class="container main-container">
+      <header class="main-header">
+        <nav class="main-nav">
+          <ul class="site-nav">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="#map">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="138" height="70" alt="logo">
+          </a>
+        </nav>
+      </header>
+      <main class="main-page">
+        <section class="intro">
+          <h1 class="visually-hidden">Welcome to Sedona</h1>
+          <img src="img/welcome-to-sedona.svg" width="457" height="351" alt="Welcome to Sedona. Because the grand canyon sucks">
+        </section>
+          <h2 class="title-main">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <p class="title-main-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-        <h2 class="title-main">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p class="title-main-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-
-      <section class="5-reasons">
-        <ul class="reasons-list">
-          <li class="reason-item">
-            <h2 class="title-reason-1">Настоящий<br> городок</h2>
-            <p class="num-1">— №1 —</p>
-            <p class="reason-description-1">Седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
-            <img src="img/content/restaurant.jpg" width="800" height="256" alt="Ресторан Open Range и американский флаг">
-            <ul class="advise-list">
-              <li class="advise-item">
-                <img src="img/icons/house.svg" width="75" height="72" alt="иконка домика">
-                <h2 class="advise-title">Жильё</h2>
-                <p class="advise-description">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
-              </li>
-              <li class="advise-item">
-                <img src="img/icons/burger.svg" width="75" height="70" alt="иконка бургера">
-                <h2 class="advise-title">Еда</h2>
-                <p class="advise-description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
-              </li>
-              <li class="advise-item">
-                <img src="img/icons/present.svg" width="64" height="77" alt="иконка подарка">
-                <h2 class="advise-title">Сувениры</h2>
-                <p class="advise-description">Не только китайского, но и местного<br> производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="reason-item">
-              <img src="img/content/devils-bridge.jpg" width="800" height="256" alt="Скала Devils Bridge">
-              <h2 class="title-reason-2">Там есть <br>Мост дьявола</h2>
-              <p class="num-2">— №2 —</p>
-              <p class="reason-description-2">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
-          </li>
-          <li class="reason-item">
-              <h2 class="title-reason">небольшая <br>площадь</h2>
-              <p class="num">— №3 —</p>
-              <p class="reason-description">все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reason-item">
-              <h2 class="title-reason">красивая<br> дорога</h2>
-              <p class="num">— №4 —</p>
-              <p class="reason-description">ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="reason-item">
-              <h2 class="title-reason">мало<br> туристов</h2>
-              <p class="num">— №5 —</p>
-              <p class="reason-description">большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section class="search-box">
-        <h2 class="visually-hidden">Осталось проверить даты</h2>
-          <span class="interested">Заинтересовались?</span>
-          <p class="indicate">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      </section>
-          <button class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-          <form class="search-form" method="get">
-            <p>
-              <label for="arrival-date">
-              Дата заезда: <input class="date-icon" type="date" name="arrival-date" id="arrival-date" value="">
-              </label>
-            </p>
-            <p>
-              <label for="departure-date">
-              Дата выезда: <input class="date-icon" type="date" name="departure-date" id="departure-date" value="">
-              </label>
-            </p>
-            <p>
-              <label for="adults-num">Взрослые: </label>
-              <button type="button" class="arrow quantity-arrow-minus"> - </button><input class="number" type="number" name="adults-num" id="adults-num" value="2"><button type="button" class="arrow quantity-arrow-plus"> + </button>
-              <label for="kids-num">Дети: </label>
-              <button type="button" class="arrow quantity-arrow-minus"> - </button><input class="number" type="number" name="kids-num" id="kids-num" value="0"><button type="button" class="arrow quantity-arrow-plus"> + </button><br>
-            </p>
-            <button class="button button-find" type="submit">Найти</button>
-          </form>
-      <div id="map">
-        <img src="img/map.png" width="1199" height="594" alt="Карта расположения города седоны">
-      </div>
-    </main>
-    <footer class="main-footer">
-      <section class="footer-contacts">
-        <h2 class="hashtag">#VISITSEDONA</h2>
-        <a class="footer-phone" href="+78005558628">+7 800 555-86-28</a>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">You can also find us on</h2>
-        <ul class="social-list">
-          <li>
-            <a class="social-button" href="#"><img src="img/icons/twitter.svg" width="17" height="15" alt="иконка твитера"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/icons/facebook.svg" width="12" height="22" alt="иконка фейсбука"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/icons/youtube.svg" width="20" height="16" alt="иконка ютюба"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-copyright">
-        <h2 class="visually-hidden">Кого благодарить за этот замечательно созданный сайт</h2>
-        <p class="website-by">Website by</p>
-        <a href="https://htmlacademy.ru">
-          <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="логотип htmlacademy" class="logo-creator">
-        </a>
-      </section>
-    </footer>
+        <section class="5-reasons">
+          <ul class="reasons-list">
+            <li class="reason-item reason-item-wide">
+              <div class="reason-item-text">
+                <h2 class=" title-reason title-reason-1">Настоящий<br> городок</h2>
+                <p class="num-1">— №1 —</p>
+                <p class="reason-description-1">Седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
+              </div>
+              <img class="reason-item-img" src="img/content/restaurant.jpg" width="800" height="256" alt="Ресторан Open Range и американский флаг">
+              <ul class="advise-list">
+                <li class="advise-item">
+                  <img class="adise-item-icon" src="img/icons/house.svg" width="75" height="72" alt="иконка домика">
+                  <h2 class="advise-title">Жильё</h2>
+                  <p class="advise-description">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+                </li>
+                <li class="advise-item">
+                  <img class="adise-item-icon" src="img/icons/burger.svg" width="75" height="70" alt="иконка бургера">
+                  <h2 class="advise-title">Еда</h2>
+                  <p class="advise-description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                </li>
+                <li class="advise-item">
+                  <img class="adise-item-icon" src="img/icons/present.svg" width="64" height="77" alt="иконка подарка">
+                  <h2 class="advise-title">Сувениры</h2>
+                  <p class="advise-description">Не только китайского, но и местного<br> производства!</p>
+                </li>
+              </ul>
+            </li>
+            <li class="reason-item reason-item-wide reason-item-wide--second">
+              <img class="reason-item-img" src="img/content/devils-bridge.jpg" width="800" height="256" alt="Скала Devils Bridge">
+              <div class="reason-item-text">
+                <h2 class="title-reason title-reason-2">Там есть <br>Мост дьявола</h2>
+                <p class="num-2">— №2 —</p>
+                <p class="reason-description-2">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+              </div>
+            </li>
+            <li class="reason-item">
+                <h2 class="title-reason">небольшая <br>площадь</h2>
+                <p class="num">— №3 —</p>
+                <p class="reason-description">все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="reason-item">
+                <h2 class="title-reason">красивая<br> дорога</h2>
+                <p class="num">— №4 —</p>
+                <p class="reason-description">ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li class="reason-item">
+                <h2 class="title-reason">мало<br> туристов</h2>
+                <p class="num">— №5 —</p>
+                <p class="reason-description">большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
+        <section class="search-box">
+          <h2 class="visually-hidden">Осталось проверить даты</h2>
+            <span class="interested">Заинтересовались?</span>
+            <p class="indicate">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </section>
+            <button class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+            <form class="search-form" method="get">
+              <p>
+                <label for="arrival-date">
+                Дата заезда: <input class="date-icon" type="date" name="arrival-date" id="arrival-date" value="">
+                </label>
+              </p>
+              <p>
+                <label for="departure-date">
+                Дата выезда: <input class="date-icon" type="date" name="departure-date" id="departure-date" value="">
+                </label>
+              </p>
+              <p>
+                <label for="adults-num">Взрослые: </label>
+                <button type="button" class="arrow quantity-arrow-minus"> - </button><input class="number" type="number" name="adults-num" id="adults-num" value="2"><button type="button" class="arrow quantity-arrow-plus"> + </button>
+                <label for="kids-num">Дети: </label>
+                <button type="button" class="arrow quantity-arrow-minus"> - </button><input class="number" type="number" name="kids-num" id="kids-num" value="0"><button type="button" class="arrow quantity-arrow-plus"> + </button><br>
+              </p>
+              <button class="button button-find" type="submit">Найти</button>
+            </form>
+        <div id="map">
+          <img src="img/map.png" width="1199" height="594" alt="Карта расположения города седоны">
+        </div>
+      </main>
+      <footer class="main-footer">
+        <section class="footer-contacts">
+          <h2 class="hashtag">#VISITSEDONA</h2>
+          <a class="footer-phone" href="+78005558628">+7 800 555-86-28</a>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">You can also find us on</h2>
+          <ul class="social-list">
+            <li>
+              <a class="social-button" href="#"><img src="img/icons/twitter.svg" width="17" height="15" alt="иконка твитера"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><img src="img/icons/facebook.svg" width="12" height="22" alt="иконка фейсбука"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><img src="img/icons/youtube.svg" width="20" height="16" alt="иконка ютюба"></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-copyright">
+          <h2 class="visually-hidden">Кого благодарить за этот замечательно созданный сайт</h2>
+          <p class="website-by">Website by</p>
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="логотип htmlacademy" class="logo-creator">
+          </a>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
