@@ -29,41 +29,47 @@
     <main class="main-page">
         <section class="search-measure">
             <h2 class="visually-hidden">Критерии поиска</h2>
-            <form method="GET">
+            <form class="search-measure-form" method="GET">
+              <div class="infrastructure">
                 <p class="search-measure-title">Инфраструктура:</p>
                 <ul class="infrastructure-list">
                     <li class="infrastructure-item">
-                        <label for="pool">Бассейн</label>
-                        <input type="checkbox" name="pool" id="pool" checked>
+                      <input type="checkbox" name="pool" id="pool" checked>
+                      <label for="pool">Бассейн</label>
                     </li>
                     <li class="infrastructure-item">
-                        <label for="parking">Парковка</label>
-                        <input type="checkbox" name="parking" id="parking">
+                      <input type="checkbox" name="parking" id="parking">
+                      <label for="parking">Парковка</label>
                     </li>
                     <li class="infrastructure-item">
-                        <label for="wi-fi">Wi-Fi</label>
-                        <input type="checkbox" name="wi-fi" id="wi-fi">
+                      <input type="checkbox" name="wi-fi" id="wi-fi">
+                      <label for="wi-fi">Wi-Fi</label>
                     </li>
                 </ul>
+              </div>
+              <div class="housing-type">
                 <p class="search-measure-title">Тип жилья:</p>
                 <ul class="housing-type-list">
                     <li class="housing-type-item">
-                        <label for="hotel">Гостиница</label>
-                        <input type="checkbox" name="hotel" id="hotel" checked>
+                      <input type="checkbox" name="hotel" id="hotel" checked>
+                      <label for="hotel">Гостиница</label>
                     </li>
                     <li class="housing-type-item">
-                        <label for="motel">Мотель</label>
-                        <input type="checkbox" name="motel" id="motel" checked>
+                      <input type="checkbox" name="motel" id="motel" checked>
+                      <label for="motel">Мотель</label>
                     </li>
                     <li class="housing-type-item">
-                        <label for="apartments">Апартаменты</label>
-                        <input type="checkbox" name="apartments" id="apartments" checked>
+                      <input type="checkbox" name="apartments" id="apartments" checked>
+                      <label for="apartments">Апартаменты</label>
                     </li>
                 </ul>
+              </div>
+              <div class="variables">
                 <p class="search-measure-title">Стоимость в сутки, ₽:</p>
                 <div></div>
                 <input type="range" min="0" max="3000" step="100">
-                <button type="submit" class="button-show">Показать</button>
+                <br><button type="submit" class="button-show">Показать</button>
+              </div>
             </form>
         </section>
         <section class="sort">

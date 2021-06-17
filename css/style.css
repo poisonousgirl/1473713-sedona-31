@@ -150,6 +150,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 /*navigation*/
 
+.main-header {
+  padding: 0 73px;
+}
+
 .main-nav {
   display: flex;
   font-size: 14px;
@@ -261,11 +265,51 @@ margin-top: 78px;
   text-transform: uppercase;
 }
 
+/*catalog*/
+
+
 .search-measure {
-background-image: url(../img/background-blur-catalog.jpg);
-background-position: top center;
-background-repeat: no-repeat;
-background-size: 1200px 217px;
+  padding: 0 73px;
+  background-image: url(../img/background-blur-catalog.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 1200px 217px;
+}
+
+.search-measure-form [type="checkbox"] {
+  display: none;
+}
+
+.search-measure-form label::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icons/checkbox.svg);
+  width: 23px;
+  height: 23px;
+}
+
+.search-measure-form input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icons/checkbox-checked.svg);
+  width: 27px;
+  height: 23px;
+}
+
+
+.search-measure-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.infrastructure,
+.housing-type {
+  text-align: left;
+}
+
+.variables {
+  grid-column: 3 / -1;
+  text-align: right;
 }
 
 .search-measure-title {
@@ -297,6 +341,7 @@ background-size: 1200px 217px;
 
 .sort {
   display: flex;
+  padding: 0 73px;
 }
 
 .sort-list {
@@ -340,6 +385,17 @@ background-size: 1200px 217px;
   text-decoration: none;
   color: var(--basic-black);
   opacity: 1;
+}
+
+.results {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0 73px;
+}
+
+.results-box {
+  display: flex;
+  padding: 30px 0;
 }
 
 .hotel-name {
@@ -388,10 +444,12 @@ background-size: 1200px 217px;
   vertical-align: middle;
   margin: 0 auto;
 }
+
 /*footer*/
 
 .main-footer {
   display: flex;
+  padding: 0 73px;
 }
 
 .footer-phone {
@@ -557,5 +615,15 @@ background-size: 1200px 217px;
 
 .reasons-list > li {
   outline: 1px solid blue;
+  outline-offset: -1px;
+}
+
+.search-measure-form {
+  outline: 1px solid violet;
+  outline-offset: -1px;
+}
+
+.results {
+  outline: 1px solid purple;
   outline-offset: -1px;
 }
