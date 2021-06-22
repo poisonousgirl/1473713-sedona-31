@@ -177,7 +177,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .sort-list,
 .amora-info-list,
 .desert-quail-list,
-.villas-diablo-list {
+.villas-diablo-list,
+.rating-list {
   list-style: none;
   padding-left: 0;
 }
@@ -361,11 +362,26 @@ margin-top: 78px;
 
 .sort {
   display: flex;
+  justify-content: start;
+  align-items: center;
   padding: 0 73px;
 }
 
+
+
 .sort-list {
+  flex-grow: 1;
+  margin-left: 6px;
   display: flex;
+}
+
+
+.sort-price {
+  width: 81px;
+}
+
+.sort-type {
+  width: 82px;
 }
 
 .found-result {
@@ -373,13 +389,20 @@ margin-top: 78px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  width: 135px;
+  text-align: left;
 }
 
 .sort-title {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-left: 29px;
+  text-align: left;
+  width: 110px;
 }
+
+/*вставить сюда стрелки*/
 
 .sort-list a,
 .scroll-up,
@@ -413,7 +436,30 @@ margin-top: 78px;
 
 .results-box {
   display: flex;
+  justify-content: space-between;
   padding: 30px 0;
+  height: 90px;
+  border-top: 1px solid var(--basic-lighter-gray);
+}
+
+.result-box-container {
+  margin-right: auto;
+  margin-left: 29px;
+  width: 258px;
+  height: 90px;
+}
+
+.hotel-name {
+  margin: 0;
+}
+
+.hotel-info-box {
+  display: grid;
+  grid-template-columns: 110px 142px;
+  grid-template-rows: 21px 27px;
+  column-gap: 6px;
+  row-gap: 15px;
+  margin: 0;
 }
 
 .hotel-name {
@@ -421,10 +467,20 @@ margin-top: 78px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .result-box-info {
   text-transform: uppercase;
+  text-align: left;
+}
+
+.star {
+  text-align: right;
+}
+
+.rating-list {
+  display: grid;
 }
 
 .button-more {
@@ -471,8 +527,19 @@ margin-top: 78px;
   padding: 0 73px;
 }
 
+
+.footer-social {
+  width: 150px;
+}
+
 .social-list {
   display: flex;
+  justify-content: space-between;
+  /*откуда отступ снизу?*/
+}
+
+.social-list a {
+  align-self: center;
 }
 
 .footer-phone {
@@ -486,9 +553,11 @@ margin-top: 78px;
   width: 46px;
   height: 48px;
 }
+
 .social-button img:active {
   filter: opacity(0.3)
 }
+
 .website-by {
   line-height: 26px;
   text-transform: uppercase;

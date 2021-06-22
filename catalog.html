@@ -18,12 +18,15 @@
         <ul class="site-nav">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
+          <li>
+            <a class="main-header-logo" href="index.html">
+              <img src="img/logo.svg" width="138" height="70" alt="logo">
+            </a>
+          </li>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="#">Гостиницы</a></li>
         </ul>
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="138" height="70" alt="logo">
-        </a>
+        
       </nav>
     </header>
     <main class="main-page">
@@ -65,7 +68,7 @@
                 </ul>
               </div>
               <div class="variables">
-                <p class="search-measure-title">Стоимость в сутки, ₽:</p>
+                <p class="search-measure-title">Стоимость в сутки, &#8381;:</p>
                 <div></div>
                 <input type="range" min="0" max="3000" step="100">
                 <br><button type="submit" class="button-show">Показать</button>
@@ -73,23 +76,23 @@
             </form>
         </section>
         <section class="sort">
-          <p class="found-result">Найдено: 3</p>
+            <p class="found-result">Найдено: 3</p>
             <h3 class="sort-title">Сортировка:</h3>
             <ul class="sort-list">
-              <li>
-            <a class="sort-price" href="#">По цене</a>
+              <li class="sort-price">
+                <a href="#">По цене</a>
               </li>
-              <li>
-                <a class="sort-type" href="#">По типу</a>
+              <li class="sort-type">
+                <a href="#">По типу</a>
               </li>
-              <li>
-                <a class="sort-rating" href="#">По рейтингу</a>
+              <li class="sort-rating">
+                <a href="#">По рейтингу</a>
               </li>
-              <li>
-                <a class="scroll-up" href="#"></a>
+              <li class="scroll-up">
+                <a class="scroll-up-button" href="#"></a>
               </li>
-              <li>
-                <a class="scroll-down" href="#"></a>
+              <li class="scroll-down">
+                <a class="scroll-down-button" href="#"></a>
               </li>
             </ul>
         </section>
@@ -97,35 +100,80 @@
           <h2 class="visually-hidden">Результаты поиска</h2>
           <article class="results-box">
             <img src="img/content/amara-resort-mini.jpg" width="135" height="90" alt="Amara resort and SPA hotel с видом на парк штата на закате">
-            <h3 class="hotel-name">Amara Resort & Spa</h3>
-            <ul class="amora-info-list">
-              <li class="result-box-info">Гостиница</li>
-              <li class="result-box-info">От 4000 ₽</li>
-              <li class="button button-more"><a href="#">Подробнее</a></li>
-              <li class="button button-book"><button>Забронировать</button></li>
+            <div class="result-box-container">
+              <h3 class="hotel-name">Amara Resort & Spa</h3>
+              <ul class="amora-info-list hotel-info-box">
+                <li class="result-box-info">Гостиница</li>
+                <li class="result-box-info">От 4000 &#8381;</li>
+                <li class="button button-more"><a href="#">Подробнее</a></li>
+                <li class="button button-book"><button>Забронировать</button></li>
+                </ul>
+            </div>
+            <ul class="rating-list">
+              <li class="star">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+              </li>
               <li class="rating">Рейтинг: 8,5</li>
             </ul>
           </article>
           <article class="results-box">
             <img src="img/content/desert-quail-mini.jpg" width="135" height="90" alt="подъезд к мотелю Desert Quail Inn с вывеской">
-            <h3 class="hotel-name">Desert Quail Inn</h3>
-            <ul class="desert-quail-list">
-              <li class="result-box-info">Мотель</li>
-              <li class="result-box-info">От 3000 ₽</li>
-              <li class="button button-more"><a href="#">Подробнее</a></li>
-              <li class="button button-book"><button>Забронировать</button></li>
+            <div class="result-box-container">
+              <h3 class="hotel-name">Desert Quail Inn</h3>
+              <ul class="desert-quail-list hotel-info-box">
+                <li class="result-box-info">Мотель</li>
+                <li class="result-box-info">От 3000 &#8381;</li>
+                <li class="button button-more"><a href="#">Подробнее</a></li>
+                <li class="button button-book"><button>Забронировать</button></li>
+              </ul>
+            </div>
+            <ul class="rating-list">
+              <li class="star">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>                    
+              </li>
               <li class="rating">Рейтинг: 8,9</li>
             </ul>
           </article>
           <article class="results-box">
             <img src="img/content/villas-diablo-mini.jpg" width="135" height="90" alt="Villas at Poco Diablo apartments с полем для гольфа на переднем плане">
-            <h3 class="hotel-name">Villas at Poco Diablo</h3>
-            <ul class="villas-diablo-list">
-              <li class="result-box-info">Апартаменты</li>
-              <li class="result-box-info">От 2000 ₽</li>
-              <li class="button button-more"><a href="#">Подробнее</a></li>
-              <li class="button button-book"><button>Забронировать</button></li>
-              <li class="rating">Рейтинг: 9,2</li>
+            <div class="result-box-container">
+              <h3 class="hotel-name">Villas at Poco Diablo</h3>
+              <ul class="villas-diablo-list hotel-info-box">
+                <li class="result-box-info">Апартаменты</li>
+                <li class="result-box-info">От 2000 &#8381;</li>
+                <li class="button button-more"><a href="#">Подробнее</a></li>
+                <li class="button button-book"><button>Забронировать</button></li>
+                </ul>
+            </div>
+            <ul class="rating-list">
+              <li class="star">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>                  
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                </svg>                  
+              </li>
+               <li class="rating">Рейтинг: 9,2</li>
             </ul>
           </article>
         </section>
@@ -151,10 +199,11 @@
       </section>
       <section class="footer-copyright">
         <h2 class="visually-hidden">Кого благодарить за этот замечательно созданный сайт</h2>
-        <p class="website-by">Website by</p>
+        <p class="website-by">Website by
         <a href="https://htmlacademy.ru">
           <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="логотип htmlacademy" class="logo-creator">
         </a>
+      </p>
       </section>
     </footer>
   </body>
