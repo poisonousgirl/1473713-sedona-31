@@ -155,13 +155,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .main-nav {
-  display: flex;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--basic-black);
   background-color: transparent;
+  margin: 0;
 }
 
 .site-nav a {
@@ -199,9 +199,21 @@ color: var(--basic-seagul);
   opacity: 0.3;
 }
 
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.main-header-logo {
+  margin: 0 auto;
+}
 /*main*/
 
 .intro {
+  display: relative;
+  top: 55px;
   margin: 0 auto;
   width: 1200px;
   height: 509px;
@@ -235,8 +247,16 @@ margin-top: 78px;
   text-transform: uppercase;
   line-height: 26px;
   color: var(--basic-extra-dark);
-
 }
+
+.reason-item {
+  background-color: var(--basic-light-gray);
+}
+
+.advise-item {
+  background-color: var(--basic-white);
+}
+
 [class^="title-reason"] {
   font-size: 21px;
   line-height: 21px;
@@ -388,8 +408,6 @@ margin-top: 78px;
 }
 
 .results {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
   padding: 0 73px;
 }
 
@@ -449,7 +467,12 @@ margin-top: 78px;
 
 .main-footer {
   display: flex;
+  justify-content: space-between;
   padding: 0 73px;
+}
+
+.social-list {
+  display: flex;
 }
 
 .footer-phone {
@@ -625,5 +648,15 @@ margin-top: 78px;
 
 .results {
   outline: 1px solid purple;
+  outline-offset: -1px;
+}
+
+.site-nav {
+  outline: 1px solid black;
+  outline-offset: -1px;;
+}
+
+.social-list {
+  outline: 1px solid deeppink;
   outline-offset: -1px;
 }
