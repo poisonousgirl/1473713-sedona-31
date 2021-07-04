@@ -123,6 +123,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .reason-item-img {
   grid-column: 2 / -1;
+  width: 800px;
+  height: 256px;
 }
 
 .advise-list {
@@ -155,6 +157,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 
 /*navigation*/
+
+.site-logo-img {
+  width: 138px;
+  height: 70px;
+}
 
 .main-header {
   padding: 0 73px;
@@ -221,7 +228,13 @@ color: var(--basic-seagul);
   position: relative;
   margin: 0 auto;
 }
+
 /*main*/
+
+.welcome-img {
+  width: 457px;
+  height: 351px;
+}
 
 .intro {
   display: relative;
@@ -319,6 +332,8 @@ margin-top: 78px;
 
 .map-img {
   display: block;
+  width: 1199px;
+  height: 594px;
 }
 
 /*catalog*/
@@ -339,10 +354,14 @@ margin-top: 78px;
 .search-measure-form label::before {
   content: "";
   display: inline-block;
+  padding-right: 15px;
   background-image: url(../img/icons/checkbox.svg);
+  background-repeat: no-repeat;
   width: 23px;
   height: 23px;
 }
+
+/* как их выровнять по вертикали?*/
 
 .search-measure-form input[type="checkbox"]:checked + label::before {
   content: "";
@@ -456,7 +475,7 @@ margin-top: 78px;
 .scroll-down {
   margin-left: 12px;
 }
-/*вставить сюда стрелки*/
+
 
 .sort-list a,
 .scroll-up,
@@ -493,13 +512,18 @@ margin-top: 78px;
   justify-content: space-between;
   padding: 30px 0;
   height: 90px;
-  border-top: 1px solid var(--basic-lighter-gray);
+  border-top: 1px solid var(--basic-lighter-gray); /*как растянуть эти линии по всей длине*/
 }
 
 .result-box-container {
   margin-right: auto;
   margin-left: 29px;
   width: 258px;
+  height: 90px;
+}
+
+.result-img {
+  width: 135px;
   height: 90px;
 }
 
@@ -699,6 +723,10 @@ display: flex;
 
 .arrow {
   color: var(--basic-darkest-gray);
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
 }
 
 .arrow:hover {
@@ -735,6 +763,7 @@ display: flex;
 
 .search-form {
   position: absolute;
+  margin: 0;
   background-color: var(--basic-white);
   width: 568px;
   height: 395px;
@@ -744,6 +773,19 @@ display: flex;
   line-height: 26px;
   box-shadow: 0px 7px 15px var(--basic-shadow);
 
+}
+
+.search-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 173px;
+  padding: 55px;
+}
+
+.search-form-item {
+  margin: 0;
+  width: 458px;
 }
 
 .date-icon,
@@ -758,6 +800,19 @@ display: flex;
   width: 346px;
   height: 38px;
 }
+
+.number {
+
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  text-align: center;
+}
+
+.quantity-arrow-minus {
+}
+
+
 
 /*========outlines========*/
 
