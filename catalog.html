@@ -16,23 +16,20 @@
     <header class="main-header">
       <nav class="main-nav">
         <ul class="site-nav">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li>
-            <a class="main-header-logo" href="index.html">
-              <img src="img/logo.svg" width="138" height="70" alt="logo">
-            </a>
-          </li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="site-nav-item"><a href="blank.html">Информация</a></li>
+          <li class="site-nav-item"><a href="blank.html">Фото и видео</a></li>
+          <li class="site-nav-item"><a class="main-header-logo" href="index.html">
+            <img class="site-logo-img" src="img/logo.svg" width="138" height="70" alt="logo">
+          </a></li>
+          <li class="site-nav-item"><a href="#map">Карта штата</a></li>
+          <li class="site-nav-item site-nav-current"><a href="#">Гостиницы</a></li>
         </ul>
-
       </nav>
-    </header>
+  </header>
     <main class="main-page">
         <section class="search-measure">
             <h2 class="visually-hidden">Критерии поиска</h2>
-            <form class="search-measure-form" method="GET">
+            <form class="search-measure-form" method="GET" action="https://echo.htmlacademy.ru">
               <div class="infrastructure">
                 <p class="search-measure-title">Инфраструктура:</p>
                 <ul class="infrastructure-list">
@@ -68,10 +65,27 @@
                 </ul>
               </div>
               <div class="variables">
-                <p class="search-measure-title">Стоимость в сутки, &#8381;:</p>
-                <div></div>
-                <input type="range" min="0" max="3000" step="100">
+                <fieldset class="filter-item">
+                <legend class="search-measure-title">Стоимость в сутки, &#8381;:</legend>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                </div>
                 <br><button type="submit" class="button-show">Показать</button>
+                </fieldset>
               </div>
             </form>
         </section>
@@ -79,7 +93,7 @@
             <p class="found-result">Найдено: 3</p>
             <h3 class="sort-title">Сортировка:</h3>
             <ul class="sort-list">
-              <li class="sort-price">
+              <li class="sort-price sort-price-current">
                 <a href="#">По цене</a>
               </li>
               <li class="sort-type">
@@ -88,16 +102,12 @@
               <li class="sort-rating">
                 <a href="#">По рейтингу</a>
               </li>
-              <li class="scroll-up">
-                <a class="scroll-up-button" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
-                  </svg>
+              <li class="sort-up">
+                <a class="sort-up-button" href="#">
                   </a>
               </li>
-              <li class="scroll-down">
-                <a class="scroll-down-button" href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
-                  </svg>
+              <li class="sort-down">
+                <a class="sort-down-button sort-down-button-current" href="#">
                   </a>
               </li>
             </ul>
