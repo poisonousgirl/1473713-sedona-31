@@ -747,14 +747,35 @@ margin-top: 78px;
   text-align: left;
 }
 
-.star {
-  text-align: right;
+.star-rating-four {
+  width: 91px;
+  height: 17px;
+  background-image: url(../img/icons/star.svg);
+  background-position: center right;
+  background-repeat: space;
+}
+
+.star-rating-three {
+  width: 66px;
+  height: 17px;
+  background-image: url(../img/icons/star.svg);
+  background-position: center right;
+  background-repeat: space;
+}
+
+.star-rating-two {
+  width: 42px;
+  height: 17px;
+  background-image: url(../img/icons/star.svg);
+  background-position: center right;
+  background-repeat: space;
 }
 
 .rating-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
   margin: 0;
 }
 
