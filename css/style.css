@@ -59,7 +59,7 @@
 
   min-height: 100%;
   align-content: start;
-}
+}  /*если задать тут как в твоем видео height: 100%; то футер не прижимается к низу, но зато при уменьшении окна по вертикали контент вылазиет из бади)) */
 
 
 img {
@@ -89,7 +89,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .page {
   background-color: var(--basic-gray);
-  height: auto;
+  height: 100%;
 }
 
 .container {
@@ -293,12 +293,15 @@ margin-top: 78px;
 }
 
 .advise-item {
+  position: relative;
+  top: 20px;
   background-color: var(--basic-white);
 }
 
 .advise-house:before {
   content: "";
-  display: block;
+  position: absolute;
+  top: -80px;
   background-image: url(../img/icons/house.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -309,7 +312,10 @@ margin-top: 78px;
 .advise-food:before {
   content:"";
   position: absolute;
+  top: -80px;
+  left: 163px;
   background-image: url(../img/icons/burger.svg);
+  background-position: center;
   width: 75px;
   height: 70px;
 }
@@ -317,7 +323,10 @@ margin-top: 78px;
 .advise-present:before {
   content:"";
   position: absolute;
+  top: -80px;
+  left: 170px;
   background-image: url(../img/icons/present.svg);
+  background-position: center;
   width: 64px;
   height: 77px;
 }
@@ -392,8 +401,6 @@ margin-top: 78px;
   height: 23px;
   vertical-align: middle;
 }
-
-/* как их выровнять по вертикали?*/
 
 .search-measure-form input[type="checkbox"]:checked + label::before {
   content: "";
@@ -512,7 +519,7 @@ margin-top: 78px;
 .range-controls .scale {
   height: 2px;
   background: var(--basic-white);
-  opacity: 0.3;
+  opacity: 0.3; /* не отображается*/
 }
 
 .range-controls .bar {
@@ -567,7 +574,7 @@ margin-top: 78px;
   background-color: var(--basic-white);
 }
 
-/* строка сортировки */
+/* ===== строка сортировки ==== */
 
 .sort {
   display: flex;
@@ -686,7 +693,11 @@ margin-top: 78px;
   justify-content: space-between;
   padding: 30px 73px;
   height: 90px;
-  border-top: 1px solid var(--basic-lighter-gray); /*как растянуть эти линии по всей длине*/
+  border-top: 1px solid var(--basic-lighter-gray);
+}
+
+.results-box-villas {
+  border-bottom:  1px solid var(--basic-lighter-gray);
 }
 
 .result-box-container {
@@ -784,7 +795,7 @@ margin-top: 78px;
   margin: 0 auto;
 }
 
-/*footer*/
+/* ==== footer ==== */
 
 .main-footer {
   display: flex;
@@ -821,13 +832,44 @@ margin-top: 78px;
 .social-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--basic-seagul);
   width: 46px;
   height: 48px;
 }
 
-.social-button:active img {
+.social-item-twitter .social-button::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 25px;
+  background-image: url(../img/icons/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-button:active::before {
   filter: opacity(0.3)
+}
+
+.social-item-facebook .social-button::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 25px;
+  background-image: url(../img/icons/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-item-youtube .social-button::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 25px;
+  background-image: url(../img/icons/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .website-by {
@@ -851,7 +893,7 @@ display: flex;
 }
 
 
-/*form*/
+/* ==== form ==== */
 
 .search-button {
   width: 568px;
@@ -909,19 +951,28 @@ display: flex;
 }
 
 .arrow {
-  color: var(--basic-darkest-gray);
   width: 38px;
   height: 38px;
   padding: 0;
   border: none;
+  cursor: pointer;
+
 }
 
-.arrow:hover {
-  color: var(--basic-black);
+.arrow svg {
+  color: var(--basic-darkest-gray);
+  width: 12px;
+  height: 15px; /* все поехало( */
 }
 
-.arrow:active {
-  color: var(--basic-seagul);
+.arrow:hover svg {
+  fill: var(--basic-black);
+  /* не работает */
+}
+
+.arrow:active svg {
+  fill: var(--basic-seagul);
+  /* не работает */
 }
 
 .button-find {
@@ -954,6 +1005,8 @@ display: flex;
   background-color: var(--basic-white);
   width: 568px;
   height: 395px;
+  left: 50%;
+  transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -986,57 +1039,12 @@ display: flex;
 .search-form [type="date"] {
   width: 346px;
   height: 38px;
+  padding-left: 13px;
 }
 
 .number {
-
   width: 38px;
   height: 38px;
   padding: 0;
   text-align: center;
-}
-
-.quantity-arrow-minus {
-}
-
-
-
-/*========outlines========*/
-
-.container {
-  outline: 1px solid red;
-}
-.main-header {
-  outline: 1px solid greenyellow;
-  outline-offset: -1px;
-}
-
-.main-footer {
-  outline: 1px solid orange;
-  outline-offset: -1px;
-}
-
-.reasons-list > li {
-  outline: 1px solid blue;
-  outline-offset: -1px;
-}
-
-.search-measure-form {
-  outline: 1px solid violet;
-  outline-offset: -1px;
-}
-
-.results {
-  outline: 1px solid purple;
-  outline-offset: -1px;
-}
-
-.site-nav {
-  outline: 1px solid black;
-  outline-offset: -1px;;
-}
-
-.social-list {
-  outline: 1px solid deeppink;
-  outline-offset: -1px;
 }

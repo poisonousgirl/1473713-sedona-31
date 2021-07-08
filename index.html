@@ -94,23 +94,43 @@
             <p class="indicate">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </section>
             <button class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-            <form class="search-form" method="get">
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
               <div class="search-form-container">
-                <p class="search-form-item">
+                <p class="search-form-item search-form-item-arrival">
                   <label for="arrival-date">
                   Дата заезда: <input class="date-icon" type="date" name="arrival-date" id="arrival-date" value="">
                   </label>
                 </p>
-                <p class="search-form-item">
+                <p class="search-form-item search-form-item-departure">
                   <label for="departure-date">
                   Дата выезда: <input class="date-icon" type="date" name="departure-date" id="departure-date" value="">
                   </label>
                 </p>
-                <p class="search-form-item">
+                <p class="search-form-item search-form-item-num">
                   <label for="adults-num">Взрослые: </label>
-                  <button type="button" class="arrow quantity-arrow-minus">-</button><input class="number" type="number" name="adults-num" id="adults-num" value="2"><button type="button" class="arrow quantity-arrow-plus"> + </button>
+                  <button type="button" class="arrow quantity-arrow-minus">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3" fill="#A9A9A9"/>
+                    </svg>
+                  </button>
+                  <input class="number" type="number" name="adults-num" id="adults-num" value="2">
+                  <button type="button" class="arrow quantity-arrow-plus">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                    </svg>
+                  </button>
                   <label for="kids-num">Дети: </label>
-                  <button type="button" class="arrow quantity-arrow-minus"> - </button><input class="number" type="number" name="kids-num" id="kids-num" value="0"><button type="button" class="arrow quantity-arrow-plus"> + </button><br>
+                  <button type="button" class="arrow quantity-arrow-minus">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3" fill="#A9A9A9"/>
+                    </svg>
+                  </button>
+                  <input class="number" type="number" name="kids-num" id="kids-num" value="0">
+                  <button type="button" class="arrow quantity-arrow-plus">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                      </svg>
+                  </button><br>
                 </p>
                 </div>
               <button class="button button-find" type="submit">Найти</button>
@@ -128,13 +148,13 @@
           <h2 class="visually-hidden">You can also find us on</h2>
           <ul class="social-list">
             <li class="social-item social-item-twitter">
-              <a class="social-button" href="https://twitter.com/"><img src="img/icons/twitter.svg" width="17" height="15" alt="иконка твитера"></a>
+              <a class="social-button" href="https://twitter.com/" aria-label="мы в твитере"> <!-- <img src="img/icons/twitter.svg" width="17" height="15" alt="иконка твитера"> --></a>
             </li>
             <li class="social-item social-item-facebook">
-              <a class="social-button" href="https://www.facebook.com/"><img src="img/icons/facebook.svg" width="12" height="22" alt="иконка фейсбука"></a>
+              <a class="social-button" href="https://www.facebook.com/" aria-label="мы в фейсбук"> <!--<img src="img/icons/facebook.svg" width="12" height="22" alt="иконка фейсбука">--></a>
             </li>
             <li class="social-item social-item-youtube">
-              <a class="social-button" href="https://www.youtube.com/"><img src="img/icons/youtube.svg" width="20" height="16" alt="иконка ютюба"></a>
+              <a class="social-button" href="https://www.youtube.com/" aria-label="мы в ютюб"> <!--<img src="img/icons/youtube.svg" width="20" height="16" alt="иконка ютюба">--></a>
             </li>
           </ul>
         </section>
