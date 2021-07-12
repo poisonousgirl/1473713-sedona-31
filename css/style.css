@@ -558,12 +558,11 @@ margin-top: 78px;
 
 .range-controls .scale {
   height: 2px;
-  background: var(--basic-white);
-  opacity: 0.3; /* не отображается*/
+  background: var(--basic-white-hover);
 }
 
 .range-controls .bar {
-  width: 79%;
+  width: 85%;
   height: 2px;
   background: var(--basic-white);
   opacity: 1;
@@ -695,6 +694,7 @@ margin-top: 78px;
 .sort-up {
   margin-left: auto;
   align-self: center;
+  margin-top: 8px;
 }
 
 .sort-up-button {
@@ -706,16 +706,17 @@ margin-top: 78px;
 }
 
 .sort-up-button:hover {
-  border-bottom: 15px solid var(--basic-black);
+  border-bottom-color: var(--basic-black);
 }
 
 .sort-up-button:active {
-  border-bottom: 15px solid var(--basic-seagul);
+  border-bottom-color: var(--basic-seagul);
 }
 
 .sort-down {
   margin-left: 12px;
   align-self: center;
+  margin-top: 8px;
 }
 
 .sort-down-button {
@@ -727,12 +728,12 @@ margin-top: 78px;
 }
 
 .sort-down-button:hover {
-  border-top: 15px solid var(--basic-black);
+  border-top-color: var(--basic-black);
 }
 
 .sort-list .sort-down-button:active,
 .sort-list .sort-down-button-current {
-  border-top: 15px solid var(--basic-seagul);
+  border-top-color: var(--basic-seagul);
   opacity: 1;
 }
 
@@ -888,6 +889,7 @@ margin-top: 78px;
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-top: -2px;
 }
 
 .social-list a {
@@ -904,7 +906,7 @@ margin-top: 78px;
 
 .footer-phone {
   text-decoration: none;
-  line-height: 51px;
+  line-height: 50px;
 }
 
 .social-button {
@@ -964,6 +966,7 @@ margin-right: 58px;
 .footer-copyright svg {
   fill: var(--basic-black);
   margin-left: 14px;
+  margin-top: 3px;
   
 }
 
