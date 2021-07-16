@@ -16,59 +16,56 @@
     <div class="container inner-container">
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <header class="main-header">
-       <nav class="main-nav">
-        <ul class="site-nav">
-          <li class="site-nav-item"><a  class="site-nav-item-link" href="blank.html">Информация</a></li>
-          <li class="site-nav-item"><a class="site-nav-item-link" href="blank.html">Фото и видео</a></li>
-          <li class="site-nav-item"><a class="main-header-logo" href="index.html">
-            <img class="site-logo-img" src="img/logo.svg" width="138" height="70" alt="logo">
-          </a></li>
-
-          <li class="site-nav-item"><a class="site-nav-item-link" href="#map">Карта штата</a></li>
-          <li class="site-nav-item site-nav-current"><a class="site-nav-item-link" href="#">Гостиницы</a></li>
-        </ul>
+        <nav class="main-nav">
+          <ul class="site-nav">
+            <li class="site-nav-item"><a class="site-nav-item-link" href="blank.html">Информация</a></li>
+            <li class="site-nav-item"><a class="site-nav-item-link" href="blank.html">Фото и видео</a></li>
+            <li class="site-nav-item"><a class="site-nav-item-link" href="#map">Карта штата</a></li>
+            <li class="site-nav-item site-nav-current"><a class="site-nav-item-link" href="#">Гостиницы</a></li>
+          </ul>
+          <a class="main-header-logo" href="index.html"><img class="site-logo-img" src="img/logo.svg" width="138" height="70" alt="logo"></a>
         </nav>
       </header>
-       <main class="main-page">
+      <main class="main-page">
         <section class="search-measure">
-            <h2 class="visually-hidden">Критерии поиска</h2>
-            <form class="search-measure-form" method="GET" action="https://echo.htmlacademy.ru">
-              <div class="infrastructure">
-                <p class="search-measure-title">Инфраструктура:</p>
-                <ul class="infrastructure-list">
-                    <li class="infrastructure-item">
-                      <input type="checkbox" name="pool" id="pool" checked>
-                      <label for="pool">Бассейн</label>
-                    </li>
-                    <li class="infrastructure-item">
-                      <input type="checkbox" name="parking" id="parking">
-                      <label for="parking">Парковка</label>
-                    </li>
-                    <li class="infrastructure-item">
-                      <input type="checkbox" name="wi-fi" id="wi-fi">
-                      <label for="wi-fi">Wi-Fi</label>
-                    </li>
-                </ul>
-              </div>
-              <div class="housing-type">
-                <p class="search-measure-title">Тип жилья:</p>
-                <ul class="housing-type-list">
-                    <li class="housing-type-item">
-                      <input type="checkbox" name="hotel" id="hotel" checked>
-                      <label for="hotel">Гостиница</label>
-                    </li>
-                    <li class="housing-type-item">
-                      <input type="checkbox" name="motel" id="motel" checked>
-                      <label for="motel">Мотель</label>
-                    </li>
-                    <li class="housing-type-item">
-                      <input type="checkbox" name="apartments" id="apartments" checked>
-                      <label for="apartments">Апартаменты</label>
-                    </li>
-                </ul>
-              </div>
-              <div class="variables">
-                <fieldset class="filter-item">
+          <h2 class="visually-hidden">Критерии поиска</h2>
+          <form class="search-measure-form" method="GET" action="https://echo.htmlacademy.ru">
+            <div class="infrastructure">
+              <p class="search-measure-title">Инфраструктура:</p>
+              <ul class="infrastructure-list">
+                <li class="infrastructure-item">
+                   <input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
+                    <label for="pool">Бассейн</label>
+                </li>
+                <li class="infrastructure-item">
+                  <input class="visually-hidden" type="checkbox" name="parking" id="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li class="infrastructure-item">
+                  <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                  <label for="wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </div>
+            <div class="housing-type">
+              <p class="search-measure-title">Тип жилья:</p>
+              <ul class="housing-type-list">
+                <li class="housing-type-item">
+                  <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="housing-type-item">
+                  <input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li class="housing-type-item">
+                  <input class="visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </div>
+            <div class="variables">
+              <fieldset class="filter-item">
                 <legend class="search-measure-title">Стоимость в сутки, &#8381;:</legend>
                 <div class="price-controls">
                   <label class="min-price">
@@ -87,10 +84,10 @@
                     <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                 </div>
-                <br><button type="submit" class="button-show">Показать</button>
-                </fieldset>
-              </div>
-            </form>
+                  <br><button type="submit" class="button-show">Показать</button>
+              </fieldset>
+            </div>
+          </form>
         </section>
         <section class="sort">
             <p class="found-result">Найдено: 3</p>
@@ -106,12 +103,10 @@
                 <a href="#">По рейтингу</a>
               </li>
               <li class="sort-up">
-                <a class="sort-up-button" href="#">
-                  </a>
+                <a class="sort-up-button" href="#" aria-label="Сортировка по возрастанию"></a>
               </li>
               <li class="sort-down">
-                <a class="sort-down-button sort-down-button-current" href="#">
-                  </a>
+                <a class="sort-down-button sort-down-button-current" href="#" aria-label="Сортировка по убыванию"></a>
               </li>
             </ul>
         </section>
@@ -126,23 +121,10 @@
                 <li class="result-box-info">От 4000 &#8381;</li>
                 <li class="button button-more"><a href="#">Подробнее</a></li>
                 <li class="button button-book"><button>Забронировать</button></li>
-                </ul>
+              </ul>
             </div>
             <ul class="rating-list">
-              <li class="star star-rating-four">
-                <!--<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>-->
-              </li>
+              <li class="star star-rating-four"></li>
               <li class="rating">Рейтинг: 8,5</li>
             </ul>
           </article>
@@ -158,17 +140,7 @@
               </ul>
             </div>
             <ul class="rating-list">
-              <li class="star star-rating-three">
-                <!--<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>-->
-              </li>
+              <li class="star star-rating-three"></li>
               <li class="rating">Рейтинг: 8,9</li>
             </ul>
           </article>
@@ -181,26 +153,19 @@
                 <li class="result-box-info">От 2000 &#8381;</li>
                 <li class="button button-more"><a href="#">Подробнее</a></li>
                 <li class="button button-book"><button>Забронировать</button></li>
-                </ul>
+              </ul>
             </div>
             <ul class="rating-list">
-              <li class="star star-rating-two">
-                <!-- <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                   <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
-                </svg> -->
-              </li>
-               <li class="rating">Рейтинг: 9,2</li>
+              <li class="star star-rating-two"></li>
+              <li class="rating">Рейтинг: 9,2</li>
             </ul>
           </article>
         </section>
-       </main>
-       <footer class="main-footer">
+      </main>
+      <footer class="main-footer">
         <section class="footer-contacts">
           <h2 class="hashtag">#VISITSEDONA</h2>
-          <a class="footer-phone" href="+78005558628">+7 800 555-86-28</a>
+          <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">You can also find us on</h2>
@@ -219,8 +184,8 @@
         <section class="footer-copyright">
           <h2 class="visually-hidden">Кого благодарить за этот замечательно созданный сайт</h2>
           <p class="website-by">Website by</p>
-          <a href="https://htmlacademy.ru">
-            <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg aria-hidden="true" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z"/>
               <path d="M11.6466 4.52965C10.0864 4.52965 8.8254 5.23807 8.03461 6.26851H7.94911V0H5.9187V15.4566H7.94911V10.1541C7.94911 8.02886 9.27424 6.50466 11.2192 6.50466C13.0573 6.50466 14.1259 7.87858 14.1259 9.72478V15.4566H16.1563V9.35984C16.1563 6.41878 14.3396 4.52965 11.6466 4.52965Z"/>
@@ -240,7 +205,7 @@
               <rect width="115" height="33.0294"/>
               </clipPath>
               </defs>
-              </svg>                           
+            </svg>                           
           </a>
         </section>
       </footer>
